@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="youtube.css">
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png"
+        type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="app.js"> -->
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLvTke2z5Gq7ULgPi_dSiARVgGsCv8Y0_iagPfCKlQ277IzghaTPVYAWwtYyc5baGiAI&usqp=CAU"
+            class="logo" alt="">
+        <div class="search-box">
+            <!-- <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="search.PNG" alt=""></button> -->
+
+            <form action="https://www.youtube.com/results" class="search-box" target="_blank">
+                <input type="text" class="search-bar" name="search_query" placeholder="search">
+                <button class="search-btn"><img src="search.PNG" alt=""></button>
+            </form>
+
+        </div>
+        <div class="user-options">
+            <img src="video.png" class="icon" alt="">
+            <img src="grid.PNG" class="icon" alt="">
+            <img src="bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="https://yt3.ggpht.com/yti/AHyvSCA0RdxIikJVUgdB6q5DwPH2VpLCf-ggte9UtmtQ7A=s88-c-k-c0x00ffffff-no-rj-mo"
+                    alt="">
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- creating side bar -->
+
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="home.PNG" alt="">home</a>
+        <a href="#" class="links"><img src="explore.PNG" alt="">explore</a>
+        <a href="#" class="links"><img src="subscription.PNG" alt="">subscription</a>
+        <hr>
+
+        <a href="#" class="links"><img src="trend.png" alt="">Trending</a>
+        <a href="#" class="links"><img src="library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="your-video.PNG" alt="">your video</a>
+        <a href="#" class="links"><img src="watch-later.PNG" alt="">watch later</a>
+        <a href="#" class="links"><img src="liked video.PNG" alt="">liked videos</a>
+        <a href="#" class="links"><img src="show more.PNG" alt="">show more</a>
+    </div>
+
+
+    <!-- DIFFERENT TOPICS -->
+
+    <div class="filters">
+
+
+
+        <button class="filter-options active">all</button>
+
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="css" name="search_query">CSS</button>
+        </form>
+
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="web development" name="search_query">web development</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="python" name="search_query">python</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="node js" name="search_query">node js</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="deep learning" name="search_query">deep learning</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="artificial intelligence" name="search_query">artificial
+                intelligence</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="machine learning" name="search_query">machine learning</button>
+        </form>
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <button class="filter-options" value="C#" name="search_query">C#</button>
+        </form>
+
+
+    </div>
+
+
+    <!-- CODE FOR VIDEOS BOX -->
+
+    <div class="video-container">
+        <!-- <div class="video">
+            <img src="download.png" class="thumbnail" alt="">
+            <div class="content">
+                <img src="https://yt3.ggpht.com/yti/AHyvSCA0RdxIikJVUgdB6q5DwPH2VpLCf-ggte9UtmtQ7A=s88-c-k-c0x00ffffff-no-rj-mo"
+                    class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">youtube clone 2023 | create working youtube clone</h4>
+                    <p class="channel-name">WEB-T</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

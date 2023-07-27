@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Shopping Cart</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPhone 14 Pro</td>
+                <td>MRP ₹139900.00</td>
+                <td><input type="number" id="q1" onchange="mychange()"></td>
+                <td>₹<span id="total1"></span> </td>
+                <!-- <td>₹139900.00</td> -->
+            </tr>
+            <tr>
+                <td>MacBook Air</td>
+                <td>MRP ₹119900.00</td>
+                <td><input type="number" id="q2" onchange="mychange()"></td>
+                <td>₹<span id="total2"></span></td>
+                <!-- <td>₹239800.00</td> -->
+            </tr>
+            <tr>
+                <td>AirPods (3rd generation)</td>
+                <td>MRP ₹20900.00</td>
+                <td><input type="number" id="q3" onchange="mychange()"></td>
+                <td>₹<span id="total3"></span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>₹<span id="total4"></span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <script>
+        function mychange() {
+            var a = document.getElementById("q1").value;
+            var b = document.getElementById("q2").value;
+            var c = document.getElementById("q3").value;
+
+
+            // .innerHTML property sets the content of that element to the calculated total price.
+
+            document.getElementById("total1").innerHTML = a * 139900;
+            document.getElementById("total2").innerHTML = b * 119900;
+            document.getElementById("total3").innerHTML = c * 20900;
+            document.getElementById("total4").innerHTML = a * 139900 + b * 119900 + c * 20900;
+        }
+    </script>
+
+</body>
+
+</html>

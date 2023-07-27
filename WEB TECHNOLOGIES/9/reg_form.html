@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <script>
+        function validateform() {
+
+            if (!(f.cpassword.value == f.password.value)) {
+                alert("Password and confirm password should be same");
+                return false;
+            }
+
+        }
+    </script>
+    <link rel="icon" href="pngwing.com.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="text-align: center; background-color: lightyellow;">
+
+    <form action="lab_9.html" name="f" onsubmit="return validateform()">
+        <fieldset>
+            <h1>Create Your ID</h1>
+            <p style=" font-size: 25px;">
+                One Apple ID is all you need to access all Apple services.
+
+            </p>
+
+
+            <section class="names">
+                <span class="fname">
+                    <input type="text" name="fname" id="ft" placeholder="first Name" required>
+                </span>
+
+                <span class="lname">
+                    <input type="text" name="lname" id="lt" placeholder="last Name" required>
+                </span>
+            </section>
+
+            <section>
+                <br>
+                <span style="font-size: 20px; margin-right: 1px;">Country:</span>
+                <select id="country" style="margin-right:285px;">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Europe">Europe</option>
+
+                </select>
+            </section>
+            <br>
+            <section>
+                <span style="font-size: 20px; margin-right: 1px;">DOB:</span>
+                <input type="date" value="date" name="date" style="margin-right:495px" ;>
+            </section>
+
+            <hr>
+
+            <section>
+
+                <div id="email">
+                    <!-- <label for="email"></label> -->
+
+                    <input type="text" name="email" id="email" placeholder="name@example.com"
+                        style="margin-right:495px">
+
+                    <div style="color: gray; margin-right: 495px;">This will be your apple id.</div>
+
+                </div>
+
+                <div id="password" style="margin-right:495px" ;>
+                    <input type="text" name="pass" id="pass" placeholder="password">
+
+                </div>
+                <p id="cpassword" style="margin-right:495px" ;>
+                    <input type="text" name="pass" id="pass" placeholder="confirm-password">
+
+                </p>
+
+                <p>
+                    <button style="background-color: #007bff; color: #fff ;cursor: pointer;">Submit</button>
+                </p>
+            </section>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
